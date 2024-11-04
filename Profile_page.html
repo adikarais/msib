@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Musetix</title>
     <link rel="stylesheet" href="Profile_page.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="Profile_page.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <header class="header">
-      <div class="logo">Musetix</div>
+      <div class="logo"><img src="img/Logo (1).png" alt="logo" style="height: 30px" /></div>
       <div class="search-bar">
         <input type="text" placeholder="cari event, komunitas, dan kategori" />
         <button>🔍</button>
@@ -19,30 +20,32 @@
         <a href="#">Beranda</a>
         <a href="#">Event</a>
         <a href="#">Tiket</a>
+        <a href="#"><img src="img/profile.png" alt="profile" class="icon-profile" /></a>
       </nav>
     </header>
 
     <!-- Profile Header Section -->
     <section style="height: 4cm">
-      <div class="section" id="one" style="background-image: url(img/isometric_greed_chest_by_sephiroth_art_dasqocv.jpg)">
-        <!-- Heading tag -->
-        <h1>Welcome To</h1>
-      </div>
+      <div class="section" id="one" style="background-image: url(img/wp13688805\ 3.png)"></div>
     </section>
     <section style="display: flex">
       <div class="profile-header" style="width: 20%">
         <div class="profile-image">
-          <img src="img/isometric_greed_chest_by_sephiroth_art_dasqocv.jpg" alt="Profile Picture" />
+          <img class="logo" src="img/fc9fa5ede1a28bad5fad74359c09bfaa 4.png" alt="Profile Picture" />
         </div>
         <div class="profile-info">
-          <h1>Teater Koma</h1>
+          <h1 class="serif">Teater Koma</h1>
           <p>@teater_komaid</p>
+          <br />
           <p>❤️ 50 orang</p>
+          <br />
           <h3>Biografi</h3>
           <p>Bereksplorasi lewat cerita. Teater Koma sudah berdiri sejak tahun 2000, sudah banyak emosi yang kita sampaikan lewat cerita.</p>
+          <br />
+          <h3>komunitas</h3>
           <div class="social-icons">
-            <a href="#"><img src="discord-icon.png" alt="Discord" /></a>
-            <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+            <a href="#"><img src="img/Vector.png" alt="Discord" /></a>
+            <a href="#"><img src="img/Vector (1).png" alt="Facebook" /></a>
           </div>
         </div>
       </div>
@@ -55,32 +58,57 @@
         </div>
 
         <div id="aktif" class="tabcontent" style="display: block">
-          <div class="event-card">
-            <img src="img/isometric_greed_chest_by_sephiroth_art_dasqocv.jpg" alt="Event Image" />
-            <div class="event-info">
-              <span class="badge">Teater</span>
-              <h4>Fragmen</h4>
-              <p>Teater Koma</p>
-              <p>Senin, 28 Oktober 2024</p>
-              <p>📍 Teater Jakarta, Jakarta, Indonesia</p>
-              <p>👥 200 orang</p>
-              <p class="available">Tersedia</p>
-              <p class="price">100.000</p>
+          <!-- batas -->
+          <div class="row justify-content-center">
+            <div class="event-card col-md-auto mb-3" style="display: flex">
+              <div class="card" style="width: 20rem">
+                <img src="img/fc9fa5ede1a28bad5fad74359c09bfaa 2.png" class="card-img-top" alt="..." />
+                <button type="button" class="btn btn-outline-warning" style="margin-top: 5px">Warning</button>
+                <div class="card-body">
+                  <h4><b>Fragmen</b></h4>
+                  <p>Teater Koma</p>
+                  <p>Senin, 28 Oktober 2024</p>
+                  <p>📍 Teater Jakarta, Jakarta, Indonesia</p>
+                  <p>👥 200 orang</p>
+                  <div style="display: flex; justify-content: space-between">
+                    <p class="available">Tersedia</p>
+                    <p class="price" style="align-items: end">100.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem">
+                <img src="img/fc9fa5ede1a28bad5fad74359c09bfaa 2.png" class="card-img-top" alt="..." />
+                <button type="button" class="btn btn-outline-warning" style="margin-top: 5px">Warning</button>
+                <div class="card-body">
+                  <h4><b>Fragmen</b></h4>
+                  <p>Teater Koma</p>
+                  <p>Senin, 28 Oktober 2024</p>
+                  <p>📍 Teater Jakarta, Jakarta, Indonesia</p>
+                  <p>👥 200 orang</p>
+                  <div style="display: flex; justify-content: space-between">
+                    <p class="available">Tersedia</p>
+                    <p class="price" style="align-items: end">100.000</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem">
+                <img src="img/fc9fa5ede1a28bad5fad74359c09bfaa 2.png" class="card-img-top" alt="..." />
+                <button type="button" class="btn btn-outline-warning" style="margin-top: 5px">Warning</button>
+                <div class="card-body">
+                  <h4><b>Fragmen</b></h4>
+                  <p>Teater Koma</p>
+                  <p>Senin, 28 Oktober 2024</p>
+                  <p>📍 Teater Jakarta, Jakarta, Indonesia</p>
+                  <p>👥 200 orang</p>
+                  <div style="display: flex; justify-content: space-between">
+                    <p class="available">Tersedia</p>
+                    <p class="price" style="align-items: end">100.000</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="event-card">
-            <img src="img/isometric_greed_chest_by_sephiroth_art_dasqocv.jpg" alt="Event Image" />
-            <div class="event-info">
-              <span class="badge">Teater</span>
-              <h4>Bumi Manusia</h4>
-              <p>Teater Koma</p>
-              <p>Selasa, 29 Oktober 2024</p>
-              <p>📍 Teater Jakarta, Jakarta, Indonesia</p>
-              <p>👥 500 orang</p>
-              <p class="available">Tersedia</p>
-              <p class="price">100.000</p>
-            </div>
-          </div>
+          <!-- batas  -->
         </div>
 
         <div id="lalu" class="tabcontent">
@@ -90,23 +118,39 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <section style="display: flex">
-        <div>
-          <p>&copy; 2024 Musetix</p>
-        </div>
+    <!-- <footer class="footer">
+      <section>
         <div class="footer-content">
           <div>
-            <a href="#">Tentang kami</a>
-            <a href="#">Syarat dan Ketentuan</a>
-            <a href="#">Pusat Bantuan</a>
+            <p>&copy; 2024 Musetix</p>
           </div>
           <div>
-            <a href="#">Kebijakan Privasi</a>
-            <a href="#">Peraturan Komunitas</a>
+            <div>
+              <a href="#">Tentang kami</a>
+              <a href="#">Syarat dan Ketentuan</a>
+              <a href="#">Pusat Bantuan</a>
+            </div>
+            <div>
+              <a href="#">Kebijakan Privasi</a>
+              <a href="#">Peraturan Komunitas</a>
+            </div>
           </div>
         </div>
       </section>
+    </footer> -->
+
+    <footer class="footer">
+      <!-- Logo Musetix -->
+      <div class="logo"><img src="img/Logo.png" alt="logo" style="height: 24px" /></div>
+
+      <!-- Tautan di bagian kanan -->
+      <div class="footer-links">
+        <a href="#">Tentang Kami</a>
+        <a href="#">Syarat dan Ketentuan</a>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Peraturan Komunitas</a>
+        <a href="#">Pusat Bantuan</a>
+      </div>
     </footer>
   </body>
 </html>
