@@ -67,19 +67,20 @@ function About_us() {
 
         {/* <!-- Code injected by live-server --> */}
       </body>
-      {/* <!-- footer --> */}
+
+      {/* <!-- Footer --> */}
       <footer className="footer">
         {/* <!-- Logo Musetix --> */}
         <div className="logo">
-          <img src="/assets/img/Logo.png" alt="logo" style={{ height: '24px' }} />
+          <img src="./assets/img/Logo.png" alt="logo" style={{ height: '24px' }} />
         </div>
 
         {/* <!-- Tautan di bagian kanan --> */}
         <div className="footer-links">
-          <a href="#">Tentang Kami</a>
-          <a href="#">Syarat dan Ketentuan</a>
-          <a href="#">Kebijakan Privasi</a>
-          <a href="#">Peraturan Komunitas</a>
+          <a href="/About_us">Tentang Kami</a>
+          <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
+          <a href="/Privacy_Policy">Kebijakan Privasi</a>
+          <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
           <a href="#">Pusat Bantuan</a>
         </div>
       </footer>
