@@ -31,11 +31,11 @@ function Privacy_Policy() {
           </div>
 
           <nav className="nav">
-            <a href="#">Beranda</a>
+            <a href="/">Beranda</a>
             <a href="#">Event</a>
             <a href="#">Tiket</a>
             <a href="#">
-              <img src="public/assets/img/profile.png" alt="profile" className="icon-profile" />
+              <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
           </nav>
         </section>

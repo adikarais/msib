@@ -25,16 +25,16 @@ function About_us() {
           </div>
 
           <nav className="nav">
-            <a href="#" className="link">
+            <a href="/" className="link">
               Beranda
             </a>
             <a href="#" className="link">
               Event
             </a>
-            <a href="#" className="link">
+            <a href="/Profile_Page_komunitas" className="link">
               Tiket
             </a>
-            <a href="#" className="link">
+            <a href="/Profil_User" className="link">
               <img src="/assets/img/profile.png" alt="User Icon" style={{ width: '30px' }} />
             </a>
           </nav>

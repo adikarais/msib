@@ -27,10 +27,10 @@ function Term_of_Condition_comunity() {
           </div>
 
           <nav className="nav">
-            <a href="#">Beranda</a>
+            <a href="/">Beranda</a>
             <a href="#">Event</a>
-            <a href="#">Tiket</a>
-            <a href="#">
+            <a href="/Profile_Page_komunitas">Tiket</a>
+            <a href="/Profil_User">
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
           </nav>
