@@ -5,7 +5,7 @@ import '../assets/css/Footer.css';
   /* <link rel="stylesheet" href="src/assets/css/Home.css" />; */
 }
 
-function Home() {
+function Event() {
   return (
     <div>
       <div>
@@ -38,8 +38,8 @@ function Home() {
       <main>
         <section className="ban">
           <div className="ban-content">
-            <h1>Gema Gemilang</h1>
-            <p>Let's join the party</p>
+            <h1>Event</h1>
+            <p>Lagi mau nonton apa hari ini?</p>
             <p>Sabtu, 26 Oktober 2024 - GBK, Jakarta, Indonesia</p>
           </div>
         </section>
@@ -89,4 +89,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Event;

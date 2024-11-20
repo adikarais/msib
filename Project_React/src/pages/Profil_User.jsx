@@ -31,7 +31,8 @@ function Profil_User() {
           <nav className="nav">
             <a href="/">Beranda</a>
             <a href="#">Event</a>
-            <a href="/Profile_Page_komunitas">Tiket</a>
+            <a href="/Profile_Page_komunitas">PPK</a>
+            <a href="/Tiket">Tiket</a>
             <a href="/Profil_User">
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
@@ -91,7 +92,7 @@ function Profil_User() {
             <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
             <a href="/Privacy_Policy">Kebijakan Privasi</a>
             <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-            <a href="#">Pusat Bantuan</a>
+            <a href="/Pusat_bantuan">Pusat Bantuan</a>
           </div>
         </footer>
       </body>

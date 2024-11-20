@@ -5,7 +5,7 @@ import '../assets/css/Footer.css';
   /* <link rel="stylesheet" href="src/assets/css/Home.css" />; */
 }
 
-function Home() {
+function Tiket() {
   return (
     <div>
       <div>
@@ -48,6 +48,8 @@ function Home() {
           <button className="btn-category">Konser</button>
           <button className="btn-category">Orkestra</button>
           <button className="btn-category">Teater</button>
+          <button className="btn-outline">Teater</button>
+          <button className="btn-outline">Teater</button>
         </section>
 
         <section className="event-section">
@@ -89,4 +91,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Tiket;
