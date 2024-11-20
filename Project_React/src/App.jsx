@@ -7,6 +7,9 @@ import Term_of_Condition_comunity from './pages/Term_of_Condition_comunity';
 import Term_of_Condition from './pages/Term_of_Condition';
 import Profil_User from './pages/Profil_User';
 import Home from './pages/Home';
+import Pusat_bantuan from './pages/Pusat_bantuan';
+import Tiket from './pages/Tiket';
+import Event from './pages/Event';
 // tambah page lain
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
         <Route path="/Term_of_Condition" element={<Term_of_Condition />} />
         <Route path="/Profil_User" element={<Profil_User />} />
         <Route path="/" element={<Home />} />
+        <Route path="/Pusat_bantuan" element={<Pusat_bantuan />} />
+        <Route path="/Tiket" element={<Tiket />} />
+        <Route path="/Event" element={<Event />} />
       </Routes>
     </BrowserRouter>
   );
