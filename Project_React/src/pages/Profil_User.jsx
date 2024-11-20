@@ -15,7 +15,6 @@ function Profil_User() {
         {/* <!-- Header --> */}
         <section className="header">
           <div className="logo">
-            {/* <img src="./assets/img/Logo (1).png" alt="logo" style={{ height: '30px' }} /> */}
             <img src="./assets/img/Logo (1).png" alt="logo" style={{ height: '30px' }} />
           </div>
 
@@ -40,17 +39,32 @@ function Profil_User() {
         </section>
 
         <main>
-          <aside>
-            <ul>
-              <li className="active">Profile</li>
-              <li>Event-ku</li>
-              <li>Tiket-ku</li>
-              <li>Notifikasi</li>
-              <li>Favorit</li>
-              <li>Pengaturan</li>
-              <li>Keluar Akun</li>
+        <aside> <div className='name-links'>
+            <ul className="side">
+              <li className="active">
+                <a href="/Profil_User">Profil</a>
+              </li>
+              <li>
+                <a href="">Event-ku</a>
+              </li>
+              <li>
+                <a href="">Tiket-ku</a>
+              </li>
+              <li>
+                <a href="/Notifikasi">Notifikasi</a>
+              </li>
+              <li>
+                <a href="">Favorit</a>
+              </li>
+              <li>
+                <a href="">Pengaturan</a>
+              </li>
+              <li>
+                <a href="">Keluar Akun</a>
+              </li>
             </ul>
-          </aside>
+            </div>
+        </aside>
 
           <section className="profile-section">
             <div className="profile-card">
@@ -88,7 +102,7 @@ function Profil_User() {
             <img src="./assets/img/Logo.png" alt="logo" style={{ height: '24px' }} />
           </div>
           <div className="footer-links">
-            <a href="/About_us">Tentang Kami</a>
+            <a href="/About_us">Tentang kami</a>
             <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
             <a href="/Privacy_Policy">Kebijakan Privasi</a>
             <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
