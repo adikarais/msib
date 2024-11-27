@@ -1,4 +1,7 @@
 import React from 'react'
+import '../assets/css/pilihmetode.css';
+import '../assets/css/Footer.css';
+import '../assets/css/Header.css';
 
 function Pilih_metode_pembayaran() {
   return (

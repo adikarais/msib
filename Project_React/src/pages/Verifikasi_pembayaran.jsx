@@ -1,4 +1,7 @@
 import React from 'react'
+import '../assets/css/verifikasipembayaran.css';
+import '../assets/css/Footer.css';
+import '../assets/css/Header.css';
 
 function Verifikasi_pembayaran() {
   return (

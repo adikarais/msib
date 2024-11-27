@@ -1,93 +1,96 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import '../assets/css/verifikasi.css'; // Pastikan file CSS Anda ada
 
 function Verifikasi() {
-  const [code, setCode] = useState(Array(6).fill("")); // State untuk menyimpan 6 digit kode
-  const [timer, setTimer] = useState(60); // Timer untuk pengiriman ulang kode
-  const [errorMessage, setErrorMessage] = useState(""); // Pesan kesalahan
+  const [code, setCode] = useState(Array(6).fill(""));
+  const [timer, setTimer] = useState(60); // Mulai dari 60 detik
+  const [errorMessage, setErrorMessage] = useState("");
   const [isVerified, setIsVerified] = useState(false); // Status verifikasi
 
-  // Fungsi untuk menghandle input kode verifikasi
-  const handleChange = (value, index) => {
-    const newCode = [...code];
-    newCode[index] = value.slice(0, 1); // Pastikan hanya 1 karakter yang bisa dimasukkan
-    setCode(newCode);
+  // Mengubah nilai input
+  const handleInputChange = (value, index) => {
+    if (/^\d?$/.test(value)) {
+      const newCode = [...code];
+      newCode[index] = value;
+      setCode(newCode);
 
-    // Pindah ke input berikutnya jika diisi
-    if (value && index < 5) {
-      document.getElementById(`code${index + 2}`).focus();
+      // Pindah ke input berikutnya jika ada input
+      if (value && index < 5) {
+        document.getElementById(`code${index + 2}`).focus();
+      }
     }
   };
 
-  // Fungsi untuk mengirim ulang kode verifikasi
+  // Kirim ulang kode verifikasi
   const resendCode = () => {
-    setTimer(60); // Reset timer
-    setErrorMessage(""); // Reset pesan error
-    setCode(Array(6).fill("")); // Reset input kode
-    console.log("Kode verifikasi dikirim ulang.");
-    // Tambahkan logika pengiriman kode di sini
+    setTimer(60); // Reset timer ke 60 detik
+    setCode(Array(6).fill("")); // Kosongkan input kode
+    setErrorMessage(""); // Hapus pesan error
+    console.log("Kode verifikasi dikirim ulang."); // Log untuk testing
   };
 
-  // Fungsi untuk memverifikasi kode
+  // Verifikasi kode
   const verifyCode = () => {
-    const enteredCode = code.join(""); // Gabungkan input menjadi string
-    const correctCode = "123456"; // Kode verifikasi yang benar (contoh)
+    const enteredCode = code.join("");
+    const correctCode = "123456"; // Kode verifikasi yang benar
 
     if (enteredCode.includes("")) {
       setErrorMessage("Harap masukkan kode verifikasi lengkap.");
     } else if (enteredCode === correctCode) {
-      setIsVerified(true); // Jika kode benar
+      setIsVerified(true); // Ubah status verifikasi jika kode benar
     } else {
       setErrorMessage("Kode yang dimasukkan salah. Silakan coba lagi.");
     }
   };
 
-  // Countdown timer logic
+  // Timer menggunakan useEffect
   useEffect(() => {
     if (timer > 0) {
       const interval = setInterval(() => {
-        setTimer((prev) => prev - 1);
+        setTimer((prev) => prev - 1); // Kurangi timer setiap detik
       }, 1000);
-      return () => clearInterval(interval);
+
+      return () => clearInterval(interval); // Hapus interval jika komponen di-unmount
     }
   }, [timer]);
 
   return (
     <div className="container">
+      {/* Tampilan jika belum diverifikasi */}
       {!isVerified ? (
         <div className="verification-container">
           {/* Logo */}
           <img src="/assets/logomr.png" alt="MuseTix Logo" className="logo" />
 
           {/* Header */}
-          <h5>Masukan Kode Verifikasi</h5>
-          <p className="instruction">Kode verifikasi telah dikirim melalui emailmu</p>
+          <h5>Masukkan Kode Verifikasi</h5>
+          <p>Kode verifikasi telah dikirim ke emailmu</p>
 
-          {/* Input Kode Verifikasi */}
-          <div className="code-input-container">
+          {/* Input Kode */}
+          <div className="d-flex justify-content-center mb-3 code-input-container">
             {code.map((digit, index) => (
               <input
                 key={index}
                 type="text"
-                maxLength="1"
                 id={`code${index + 1}`}
                 className="code-input"
+                maxLength="1"
                 value={digit}
-                onChange={(e) => handleChange(e.target.value, index)}
+                onChange={(e) => handleInputChange(e.target.value, index)}
               />
             ))}
           </div>
 
-          {/* Kirim Ulang dan Timer */}
-          <p className="resend-container">
-            Kirim ulang kode?
+          {/* Kirim ulang */}
+          <p>
+            Kirim ulang kode?{" "}
             <span className="resend-link" onClick={resendCode}>
-              {" "}
               kirim kode
-            </span>
-            <span className="resend-timer">{timer > 0 ? ` (${timer}s)` : ""}</span>
+            </span>{" "}
+            {timer > 0 && <span className="resend-timer">{timer}s</span>}
           </p>
 
-          {/* Pesan Error */}
+          {/* Pesan error */}
           {errorMessage && <p className="error-message">{errorMessage}</p>}
 
           {/* Tombol Verifikasi */}
@@ -96,14 +99,18 @@ function Verifikasi() {
           </button>
         </div>
       ) : (
+        // Tampilan jika verifikasi berhasil
         <div className="success-container">
-          <img src="ceklis.png" alt="Verifikasi Berhasil" className="success-icon" />
+          <img src="/assets/ceklis.png" alt="Verifikasi Berhasil" className="success-icon" />
           <h1>Verifikasi Berhasil</h1>
           <p>
             Selamat datang di <strong>MuseTix</strong>,<br />
-            temukan pertunjukkan impianmu bersama kami
+            temukan pertunjukkan impianmu bersama kami.
           </p>
-          <button className="btn home-button" onClick={() => console.log("Navigasi ke Beranda")}>
+          <button
+            className="btn home-button"
+            onClick={() => console.log("Navigasi ke Beranda")} // Tambahkan logika navigasi jika perlu
+          >
             Beranda
           </button>
         </div>
