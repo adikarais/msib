@@ -19,56 +19,56 @@
     }
 
     /* Progress Circles */
-    .progress-steps {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        position: relative;
-        padding: 0 30px;
-    }
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0 30px;
+}
 
-    .progress-circle {
-        width: 20px; /* Smaller size for circles */
-        height: 20px;
-        background-color: #d3d3d3;
-        border-radius: 50%;
-        display: inline-block;
-        z-index: 1;
-    }
+.progress-circle {
+    width: 20px; /* Ukuran lebih kecil untuk lingkaran */
+    height: 20px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 1;
+}
 
-    .progress-circle.active {
-        background-color: #000000;
-    }
+.progress-circle.active {
+    background-color: #000000; /* Lingkaran aktif menjadi hitam */
+}
 
-    .progress-step-label {
-        text-align: center;
-        font-size: 0.85rem;
-        color: #000000;
-        margin-top: 8px;
-        width: 70px;
-    }
+.progress-step-label {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #000000;
+    margin-top: 8px;
+    width: 70px;
+}
 
-    .progress-line {
-        position: absolute;
-        top: 10px;
-        left: 30px;
-        right: 30px;
-        height: 3px;
-        background-color: #d3d3d3;
-        z-index: 0;
-    }
+.progress-line {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    right: 30px;
+    height: 3px;
+    background-color: #d3d3d3;
+    z-index: 0;
+}
 
-    .progress-line-filled {
-        position: absolute;
-        top: 10px;
-        left: 30px;
-        height: 3px;
-        background-color: #000000;
-        z-index: 1;
-        width: 40%; /* Line filled only up to step 3 */
-    }
+.progress-line-filled {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    height: 3px;
+    background-color: #000000;
+    z-index: 1;
+    width: 60%; /* Sesuaikan lebar garis untuk mencakup langkah 1 hingga 3 */
+}
 
     /* Countdown Timer */
     .countdown-timer {

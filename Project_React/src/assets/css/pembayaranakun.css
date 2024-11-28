@@ -112,6 +112,7 @@
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
+    margin-left: 100px;
     flex: 1; /* Memastikan judul dan timer berada pada baris yang sama */
 }
 
@@ -119,16 +120,25 @@
 .btn-small-center {
     width: 160px;
     font-size: 1rem;
-    margin: 20px auto 0; /* Add margin-top to move the button down */
-    display: block;
-    background-color: transparent;
+    margin: 20px auto; /* Auto margin untuk memusatkan tombol secara horizontal */
+    display: block; /* Pastikan tombol bertindak sebagai elemen block */
+    background-color: white;  /* Warna latar belakang tombol */
     border: 2px solid #FFD700; /* Border kuning */
     color: #FFD700; /* Teks kuning */
     transition: all 0.3s ease;
+    text-align: center; /* Pusatkan teks di dalam tombol */
+    border-radius: 5px;
 }
-
 .btn-small-center:hover {
     background-color: #b91d23;
     border: #b91d23;
     color: white;
+}
+
+/* Memastikan elemen yang membungkus tombol juga dipusatkan */
+.parent-container {
+    display: flex;
+    justify-content: center;  /* Pusatkan secara horizontal */
+    align-items: center;      /* Pusatkan secara vertikal (opsional) */
+    height: 15vh;            /* Opsional: Pusatkan secara vertikal di seluruh layar */
 }

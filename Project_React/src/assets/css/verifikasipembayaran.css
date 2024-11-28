@@ -104,6 +104,7 @@
     font-weight: 500;
     background-color: transparent;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
 
 .next-button:hover {
@@ -180,7 +181,7 @@ footer img {
     text-align: left;
     font-size: 0.8rem;
     margin-top: 10px;
-    margin-left: 265px; /* Geser sedikit ke kanan */
+    margin-left: 420px; /* Geser sedikit ke kanan */
 }
 
 /* Membuat pemisahan antara teks dan tombol kirim ulang */
