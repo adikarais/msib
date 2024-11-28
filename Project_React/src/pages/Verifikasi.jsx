@@ -56,11 +56,12 @@ function Verifikasi() {
 
   return (
     <div className="container">
+       <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet"></link>
       {/* Tampilan jika belum diverifikasi */}
       {!isVerified ? (
         <div className="verification-container">
           {/* Logo */}
-          <img src="/assets/logomr.png" alt="MuseTix Logo" className="logo" />
+          <img src="/assets/img/logomr.png" alt="MuseTix Logo" className="logo" />
 
           {/* Header */}
           <h5>Masukkan Kode Verifikasi</h5>
@@ -101,7 +102,7 @@ function Verifikasi() {
       ) : (
         // Tampilan jika verifikasi berhasil
         <div className="success-container">
-          <img src="/assets/ceklis.png" alt="Verifikasi Berhasil" className="success-icon" />
+          <img src="/assets/img/ceklis.png" alt="Verifikasi Berhasil" className="success-icon" />
           <h1>Verifikasi Berhasil</h1>
           <p>
             Selamat datang di <strong>MuseTix</strong>,<br />

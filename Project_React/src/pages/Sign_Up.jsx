@@ -3,12 +3,19 @@ import React from 'react'
 function Sign_Up() {
   return (
     <div>
+        <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Musetix - Profile</title>
+        <link rel="stylesheet" href="src/assets/css/styles.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous" />
+      </head>
       <div className="main-container">
     
         <div className="frame">
            
             <div className="form-container">
-                 <img src="/assets/logomr.png" alt="MuseTix Logo" style={{height: '30px'}}/> 
+                 <img src="/assets/img/logomr.png" alt="MuseTix Logo" style={{height: '30px'}}/> 
                 <p>Belum punya akun? Kenalan dulu yuk...</p>
                 <form action="your_signup_endpoint" method="post">
                     <div className="input-group">
@@ -31,7 +38,7 @@ function Sign_Up() {
                 </div>
                 
                 <button className="google-btn">
-                    <img src="/assets/google.png" alt="Google Icon" className="google-icon"/>
+                    <img src="/assets/img/google.png" alt="Google Icon" className="google-icon"/>
                     Daftar dengan akun Google
                 </button>
                 
@@ -39,7 +46,7 @@ function Sign_Up() {
 
           
             <div className="image-container">
-                <img src="/assets/wp.jpg" alt="Concert" className="side-image"/>
+                <img src="/assets/img/wp.jpg" alt="Concert" className="side-image"/>
             </div>
         </div>
     </div>
