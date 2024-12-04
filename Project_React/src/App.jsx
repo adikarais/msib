@@ -17,6 +17,13 @@ import Pembayaran_akunvirtual from './pages/Pembayaran_akunvirtual';
 import Pilih_metode_pembayaran from './pages/Pilih_metode_pembayaran';
 import Verifikasi_pembayaran from './pages/Verifikasi_pembayaran';
 import Tiket_page from './pages/Tiket_page';
+import Deskripsi_eventku from './pages/Deskripsi_eventku';
+import Detail_pembayaran from './pages/Detail_pembayaran';
+import Event_ku from './pages/Event_ku';
+import Favorit from './pages/Favorit';
+import Notifikasi from './pages/Notifikasi';
+
+
 // import Headerbaruu from './pages/Headerbaruu';
 // import Footerbaruu from './pages/Footerbaruu';
 
@@ -37,23 +44,29 @@ function AppLayout() {
       <main style={{ flex: 1 }}>
         <Routes>
           {/* Definisi semua rute */}
-          <Route path="/" element={<Home />} />
-          <Route path="/about_us" element={<About_us />} />
-          <Route path="/privacy_policy" element={<Privacy_Policy />} />
-          <Route path="/profile_page_komunitas" element={<Profile_Page_komunitas />} />
-          <Route path="/term_of_condition_comunity" element={<Term_of_Condition_comunity />} />
-          <Route path="/term_of_condition" element={<Term_of_Condition />} />
-          <Route path="/profil_user" element={<Profil_User />} />
-          <Route path="/pusat_bantuan" element={<Pusat_bantuan />} />
-          <Route path="/tiket" element={<Tiket />} />
-          <Route path="/event" element={<Event />} />
-          <Route path="/sign_in" element={<Sign_in />} />
-          <Route path="/sign_up" element={<Sign_Up />} />
-          <Route path="/verifikasi" element={<Verifikasi />} />
-          <Route path="/pilih_metode_pembayaran" element={<Pilih_metode_pembayaran />} />
-          <Route path="/pembayaran_akunvirtual" element={<Pembayaran_akunvirtual />} />
-          <Route path="/verifikasi_pembayaran" element={<Verifikasi_pembayaran />} />
-          <Route path="/tiket_page" element={<Tiket_page />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/About_us" element={<About_us />} />
+          <Route path="/Privacy_Policy" element={<Privacy_Policy />} />
+          <Route path="/Profile_Page_komunitas" element={<Profile_Page_komunitas />} />
+          <Route path="/Term_of_Condition_comunity" element={<Term_of_Condition_comunity />} />
+          <Route path="/Term_of_Condition" element={<Term_of_Condition />} />
+          <Route path="/Profil_user" element={<Profil_User />} />
+          <Route path="/Pusat_bantuan" element={<Pusat_bantuan />} />
+          <Route path="/Tiket" element={<Tiket />} />
+          <Route path="/Event" element={<Event />} />
+          <Route path="/Sign_in" element={<Sign_in />} />
+          <Route path="/Sign_up" element={<Sign_Up />} />
+          <Route path="/Verifikasi" element={<Verifikasi />} />
+          <Route path="/Pilih_metode_pembayaran" element={<Pilih_metode_pembayaran />} />
+          <Route path="/Pembayaran_akunvirtual" element={<Pembayaran_akunvirtual />} />
+          <Route path="/Verifikasi_pembayaran" element={<Verifikasi_pembayaran />} />
+          <Route path="/Tiket_page" element={<Tiket_page />} />
+          <Route path="/Deskripsi_eventku" element={<Deskripsi_eventku/>}/>
+          <Route path="/Detail_pembayaran" element={<Detail_pembayaran/>}/>
+          <Route path="/Event_ku" element={<Event_ku/>}/>
+          <Route path="/Favorit" element={<Favorit/>}/>
+          <Route path="/Notifikasi" element={<Notifikasi/>}/>
+
           {/* Fallback untuk halaman yang tidak ditemukan */}
           <Route
             path="*"
