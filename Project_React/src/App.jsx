@@ -22,6 +22,7 @@ import Detail_pembayaran from './pages/Detail_pembayaran';
 import Event_ku from './pages/Event_ku';
 import Favorit from './pages/Favorit';
 import Notifikasi from './pages/Notifikasi';
+import Event_Page from './pages/Event_Page';
 
 
 // import Headerbaruu from './pages/Headerbaruu';
@@ -66,6 +67,8 @@ function AppLayout() {
           <Route path="/Event_ku" element={<Event_ku/>}/>
           <Route path="/Favorit" element={<Favorit/>}/>
           <Route path="/Notifikasi" element={<Notifikasi/>}/>
+          <Route path="/Event_Page" element={<Event_Page/>}/>
+
 
           {/* Fallback untuk halaman yang tidak ditemukan */}
           <Route
