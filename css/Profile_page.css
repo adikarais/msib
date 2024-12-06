@@ -201,6 +201,7 @@ nav {
   padding: 20px;
   width: 100%;
   /* margin: 0 auto; */
+  flex-direction: column;
 }
 
 .tab {
@@ -319,4 +320,5 @@ div {
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  background: url('/assets/img/wp13688805 3.png') no-repeat center center/cover;
 }
