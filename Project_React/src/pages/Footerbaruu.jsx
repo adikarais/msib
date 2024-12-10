@@ -21,11 +21,11 @@ function Footerbaruu() {
                     <div className="col-md-9">
                         <div className="row">
                             <div className="col-md-6 text-start">
-                                <a href="#">Tentang kami</a><br />
-                                <a href="#">Kebijakan Privasi</a>
+                                <a href="/About_us">Tentang kami</a><br />
+                                <a href="/Privacy_Policy">Kebijakan Privasi</a>
                             </div>
                             <div className="col-md-6 text-start">
-                                <a href="#">Syarat dan Ketentuan</a><br />
+                                <a href="/Term_of_Condition">Syarat dan Ketentuan</a><br />
                                 <a href="/Pusat_bantuan">Pusat Bantuan</a>
                             </div>
                         </div>

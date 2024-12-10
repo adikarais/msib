@@ -25,14 +25,9 @@ function About_us() {
           </div>
 
           <nav className="nav">
-            <a href="/" className="link">
-              Beranda
-            </a>
-            <a href="#" className="link">
-              Event
-            </a>
-            <a href="/Profile_Page_komunitas">PPK</a>
-            <a href="/Tiket">Tiket</a>
+            <a href="/">Beranda</a>
+            <a href="/Event">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User" className="link">
               <img src="/assets/img/profile.png" alt="User Icon" style={{ width: '30px' }} />
             </a>
@@ -80,7 +75,7 @@ function About_us() {
           <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
           <a href="/Privacy_Policy">Kebijakan Privasi</a>
           <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-          <a href="/Pusat_bantuan">Pusat Bantuan</a>
+          <a href="/pusat_bantuan">Pusat Bantuan</a>
         </div>
       </footer>
     </div>

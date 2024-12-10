@@ -26,9 +26,9 @@ function Notifikasi() {
           </div>
 
           <nav className="nav">
-            <a href="#">Beranda</a>
-            <a href="#">Event</a>
-            <a href="/Tiket">Tiket</a>
+            <a href="/">Beranda</a>
+            <a href="/Event">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
             <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
@@ -42,7 +42,7 @@ function Notifikasi() {
                 <a href="/profil_User">Profil</a>
               </li>
               <li>
-                <a href="">Event-ku</a>
+                <a href="/Event_ku">Event-ku</a>
               </li>
               <li>
                 <a href="">Tiket-ku</a>
@@ -64,7 +64,7 @@ function Notifikasi() {
         </aside>
 
           <section className="notification-section">
-            <h2>Notifikasi</h2>
+            <h2>Notikafikasi</h2>
             <p>ada pesan untuk kamu, jangan lupa di cek, ya!</p>
             <div className="notification-card">
               <h3>Pembayaranmu Berhasil, nih!</h3>
@@ -93,7 +93,7 @@ function Notifikasi() {
             <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
             <a href="/Privacy_Policy">Kebijakan Privasi</a>
             <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-            <a href="/Pusat_bantuan">Pusat Bantuan</a>
+            <a href="/pusat_bantuan">Pusat Bantuan</a>
           </div>
           </div>
         </footer>

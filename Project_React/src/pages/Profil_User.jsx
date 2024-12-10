@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/profil.css';
 
 function Profil_User() {
   return (
@@ -7,8 +8,6 @@ function Profil_User() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Musetix - Profile</title>
-        <link rel="stylesheet" href="src/assets/css/profil.css" />
-        <link rel="stylesheet" href="src/assets/css/Footer.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous" />
       </head>
       <body>
@@ -29,9 +28,8 @@ function Profil_User() {
 
           <nav className="nav">
             <a href="/">Beranda</a>
-            <a href="#">Event</a>
-            <a href="/Profile_Page_komunitas">PPK</a>
-            <a href="/Tiket">Tiket</a>
+            <a href="/Event">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
@@ -45,7 +43,7 @@ function Profil_User() {
                 <a href="/Profil_User">Profil</a>
               </li>
               <li>
-                <a href="">Event-ku</a>
+                <a href="/Event_ku">Event-ku</a>
               </li>
               <li>
                 <a href="">Tiket-ku</a>
@@ -54,7 +52,7 @@ function Profil_User() {
                 <a href="/Notifikasi">Notifikasi</a>
               </li>
               <li>
-                <a href="">Favorit</a>
+                <a href="/Favorit">Favorit</a>
               </li>
               <li>
                 <a href="">Pengaturan</a>
@@ -106,7 +104,7 @@ function Profil_User() {
             <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
             <a href="/Privacy_Policy">Kebijakan Privasi</a>
             <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-            <a href="/Pusat_bantuan">Pusat Bantuan</a>
+            <a href="/pusat_bantuan">Pusat Bantuan</a>
           </div>
         </footer>
       </body>

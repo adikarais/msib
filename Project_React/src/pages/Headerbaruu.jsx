@@ -27,7 +27,7 @@ function Headerbaruu() {
                     </button>
                 </form>
                 <div className="navbar-links">
-                    <a href="/Tiket_page"> Beranda </a>
+                    <a href="/"> Beranda </a>
                     <a href="/Event">  Event </a>
                     <a href="/Tiket_page"> Tiket </a>
                     <a href="/Profile">
