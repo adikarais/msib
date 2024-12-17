@@ -75,3 +75,19 @@ footer .col-md-3 {
 footer .col-md-9 {
   padding-left: 20px; /* Geser teks ke kanan */
 }
+
+.content {
+  text-align: justify; /* Mengatur teks menjadi justify */
+  line-height: 1.6; /* Menambahkan jarak antar baris untuk keterbacaan */
+  margin: 0 auto; /* Mengatur margin otomatis untuk pusat konten */
+  max-width: 800px; /* Mengatur lebar maksimum untuk konten */
+}
+
+.content p,
+.content ul {
+  text-align: justify; /* Mengatur teks dalam paragraf dan daftar menjadi justify */
+}
+
+.content ul {
+  padding-left: 20px; /* Menambahkan padding untuk daftar */
+}

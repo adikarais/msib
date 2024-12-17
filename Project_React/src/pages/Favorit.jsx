@@ -27,14 +27,14 @@ function Favorit () {
           </div>
 
           <nav className="nav">
-            <a href="#">Beranda</a>
-            <a href="#">Event</a>
-            <a href="/Tiket">Tiket</a>
+          <a href="/Home">Beranda</a>
+            <a href="/Event">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
-            <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
+              <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
           </nav>
-          </section>
+        </section>
 
         <main>
         <aside> <div className='name-links'>
@@ -43,10 +43,10 @@ function Favorit () {
                 <a href="/profil_User">Profil</a>
               </li>
               <li>
-                <a href="">Event-ku</a>
+                <a href="/Event_ku">Event-ku</a>
               </li>
               <li>
-                <a href="">Tiket-ku</a>
+                <a href="/Tiket_ku">Tiket-ku</a>
               </li>
               <li>
                 <a href="/Notifikasi">Notifikasi</a>
@@ -55,10 +55,10 @@ function Favorit () {
                 <a href="/Favorit">Favorit</a>
               </li>
               <li>
-                <a href="">Pengaturan</a>
+                <a href="/pengaturan">Pengaturan</a>
               </li>
               <li>
-                <a href="">Keluar Akun</a>
+                <a href="sign_in">Keluar Akun</a>
               </li>
             </ul>
             </div>
@@ -76,12 +76,12 @@ function Favorit () {
                     <h2>Fragmen</h2>
                     <p>Teater Koma</p>
                     <br />
-                    <p className="event-date">Senin, 28 Oktober 2024</p>
-                    <p className="event-location">Teater Jakarta, Jakarta, Indonesia</p>
-                    <p className="event-capacity">200 orang</p> <br />
+                    <p className="event-date">📅Senin, 28 Oktober 2024</p>
+                    <p className="event-location">🏠Teater Jakarta, Jakarta, Indonesia</p>
+                    <p className="event-capacity">👥200 orang</p> <br />
                     <p className="event-price">
                     <span className="availability">Tersedia</span>
-                    <span className="price">100.000</span>
+                    <span className="price">💳100.000</span>
                     </p>
                 </div>
                 </div>
@@ -94,12 +94,12 @@ function Favorit () {
                     <h2>Bumi Manusia</h2>
                     <p>Teater Koma</p>
                     <br />
-                    <p className="event-date">Selasa, 29 Oktober 2024</p>
-                    <p className="event-location">Teater Jakarta, Jakarta, Indonesia</p>
-                    <p className="event-capacity">200 orang</p> <br />
+                    <p className="event-date">📅Selasa, 29 Oktober 2024</p>
+                    <p className="event-location">🏠Teater Jakarta, Jakarta, Indonesia</p>
+                    <p className="event-capacity">👥200 orang</p> <br />
                     <p className="event-price">
                     <span className="availability">Tersedia</span>
-                    <span className="price">100.000</span>
+                    <span className="price">💳100.000</span>
                     </p>
                 </div>
                 </div>
@@ -112,12 +112,12 @@ function Favorit () {
                     <h2>Revolusi</h2>
                     <p>Teater Koma</p>
                     <br />
-                    <p className="event-date">Minggu, 27 Oktober 2024</p>
-                    <p className="event-location">Art Center, Denpasar, Indonesia</p>
-                    <p className="event-capacity">200 orang</p> <br />
+                    <p className="event-date">📅Minggu, 27 Oktober 2024</p>
+                    <p className="event-location">🏠Art Center, Denpasar, Indonesia</p>
+                    <p className="event-capacity">👥200 orang</p> <br />
                     <p className="event-price">
                     <span className="availability">Tersedia</span>
-                    <span className="price">100.000</span>
+                    <span className="price">💳100.000</span>
                     </p>
                 </div>
                 </div>

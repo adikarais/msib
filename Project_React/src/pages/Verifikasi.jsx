@@ -7,7 +7,7 @@ function Verifikasi() {
   const [errorMessage, setErrorMessage] = useState("");
   const [isVerified, setIsVerified] = useState(false); // Status verifikasi
 
-  // Mengubah nilai input
+  // Menangani perubahan input
   const handleInputChange = (value, index) => {
     if (/^\d?$/.test(value)) {
       const newCode = [...code];
@@ -25,8 +25,8 @@ function Verifikasi() {
   const resendCode = () => {
     setTimer(60); // Reset timer ke 60 detik
     setCode(Array(6).fill("")); // Kosongkan input kode
-    setErrorMessage(""); // Hapus pesan error
-    console.log("Kode verifikasi dikirim ulang."); // Log untuk testing
+    setErrorMessage(""); // Kosongkan pesan kesalahan
+    console.log("Kode verifikasi telah dikirim ulang."); // Log untuk pengujian
   };
 
   // Verifikasi kode
@@ -34,6 +34,7 @@ function Verifikasi() {
     const enteredCode = code.join("");
     const correctCode = "123456"; // Kode verifikasi yang benar
 
+    // Periksa apakah semua input terisi
     if (enteredCode.includes("")) {
       setErrorMessage("Harap masukkan kode verifikasi lengkap.");
     } else if (enteredCode === correctCode) {
@@ -50,70 +51,45 @@ function Verifikasi() {
         setTimer((prev) => prev - 1); // Kurangi timer setiap detik
       }, 1000);
 
-      return () => clearInterval(interval); // Hapus interval jika komponen di-unmount
+      return () => clearInterval(interval); // Hapus interval jika komponen tidak lagi digunakan
     }
   }, [timer]);
 
   return (
-    <div className="container">
-       <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet"></link>
-      {/* Tampilan jika belum diverifikasi */}
-      {!isVerified ? (
-        <div className="verification-container">
-          {/* Logo */}
-          <img src="/assets/img/logomr.png" alt="MuseTix Logo" className="logo" />
+    <div className="container d-flex flex-column justify-content-center align-items-center" style={{ height: '100vh', backgroundColor: '#f8f9fa' }}>
+      <img src="./public/assets/img/logomr.png" alt="Logo MuseTix" className="mb-4" style={{ width: '300px', height: 'auto' }} />
+      <h1 className="text-center" style={{ fontSize: '2rem', marginTop: '50px', marginBottom: '10px' }}>Masukkan Kode Verifikasi</h1>
+      <h2 className="text-center" style={{ fontSize: '2rem', marginTop: '10px', marginBottom: '30px' }}>Kode verifikasi telah dikirim ke email Anda</h2>
+      <div className="d-flex justify-content-center mb-4">
+        {code.map((digit, index) => (
+          <input
+            key={index}
+            type="text"
+            id={`code${index + 1}`}
+            className="code-input"
+            maxLength="1"
+            value={digit}
+            onChange={(e) => handleInputChange(e.target.value, index)}
+            style={{ margin: '0 5px', textAlign: 'center' }} // Add spacing between inputs
+          />
+        ))}
+      </div>
+      <div className="d-flex justify-content-center w-100 mb-3">
+        <p className="text-center" style={{ fontSize: '0.9rem', marginTop: '30px', marginBottom: '30px' }}>
+          Kirim ulang kode?
+          <span className="resend-link" onClick={resendCode}> kirim kode</span>
+          <span className="resend-timer">{timer}s</span>
+        </p>
+      </div>
+      <p className="error-message text-center">{errorMessage}</p>
+      <button className="btn verify-button" onClick={verifyCode}><a href="/verifikasi_berhasil">Verifikasi Kode</a></button>
 
-          {/* Header */}
-          <h5>Masukkan Kode Verifikasi</h5>
-          <p>Kode verifikasi telah dikirim ke emailmu</p>
-
-          {/* Input Kode */}
-          <div className="d-flex justify-content-center mb-3 code-input-container">
-            {code.map((digit, index) => (
-              <input
-                key={index}
-                type="text"
-                id={`code${index + 1}`}
-                className="code-input"
-                maxLength="1"
-                value={digit}
-                onChange={(e) => handleInputChange(e.target.value, index)}
-              />
-            ))}
-          </div>
-
-          {/* Kirim ulang */}
-          <p>
-            Kirim ulang kode?{" "}
-            <span className="resend-link" onClick={resendCode}>
-              kirim kode
-            </span>{" "}
-            {timer > 0 && <span className="resend-timer">{timer}s</span>}
-          </p>
-
-          {/* Pesan error */}
-          {errorMessage && <p className="error-message">{errorMessage}</p>}
-
-          {/* Tombol Verifikasi */}
-          <button className="btn verify-button" onClick={verifyCode}>
-            Verifikasi Kode
-          </button>
-        </div>
-      ) : (
-        // Tampilan jika verifikasi berhasil
-        <div className="success-container">
-          <img src="/assets/img/ceklis.png" alt="Verifikasi Berhasil" className="success-icon" />
+      {isVerified && (
+        <div className="success-container text-center">
+          <img src="ceklis.png" alt="Verifikasi Berhasil" />
           <h1>Verifikasi Berhasil</h1>
-          <p>
-            Selamat datang di <strong>MuseTix</strong>,<br />
-            temukan pertunjukkan impianmu bersama kami.
-          </p>
-          <button
-            className="btn home-button"
-            onClick={() => console.log("Navigasi ke Beranda")} // Tambahkan logika navigasi jika perlu
-          >
-            Beranda
-          </button>
+          <p>Selamat datang di <strong>MuseTix</strong>,<br /> temukan pertunjukan impian Anda bersama kami</p>
+          <button className="btn home-button" onClick={() => console.log("Navigasi ke Beranda")}>Beranda</button>
         </div>
       )}
     </div>

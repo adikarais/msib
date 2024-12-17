@@ -12,12 +12,16 @@
   /* Header */
   .header {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: auto;
-    padding: 10px;
-    background-color: #f8f8f8;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #fff;
     border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
   
   .logo {
@@ -142,7 +146,7 @@
   border-radius: 50%;
   background-color: #ccc;
   margin-bottom: 5px;
-  position: relative;
+  position:absolute;
   }
   
   /* Active step styling */
@@ -294,37 +298,47 @@ button:hover {
   
   /* Footer */
   .footer {
-    background-color: #9b111e;
-    padding: 20px 40px;
-    color: #fff;
+    position: fixed; /* Tetap berada di bagian bawah layar */
+    bottom: 0; /* Pastikan footer berada di bawah */
+    left: 0; /* Pastikan footer mulai dari ujung kiri */
+    width: 100vw; /* Lebar penuh layar */
+    background-color: #8b1b1b; /* Warna merah gelap */
+    color: white;
+    padding: 20px 50px; /* Ruang di dalam footer */
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    justify-content: space-between; /* Spasi antara elemen */
+    align-items: center; /* Vertikal tengah */
+    box-sizing: border-box; /* Hitung padding dalam lebar elemen */
+    z-index: 1000; /* Pastikan berada di atas elemen lain jika diperlukan */
   }
   
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .footer-logo p {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
   
   .footer-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
   }
   
   .footer-links a {
-    color: #fff;
-    font-size: 14px;
+    color: white;
     text-decoration: none;
+    font-size: 16px;
   }
   
   .footer-links a:hover {
     text-decoration: underline;
   }
   
+  /* Optional: Menambahkan responsif agar lebih baik */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+  
+    .footer {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 20px;
+    }
+  }

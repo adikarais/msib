@@ -28,10 +28,9 @@ function Profil_User() {
           </div>
 
           <nav className="nav">
-            <a href="/">Beranda</a>
-            <a href="#">Event</a>
-            <a href="/Profile_Page_komunitas">PPK</a>
-            <a href="/Tiket">Tiket</a>
+          <a href="/Home">Beranda</a>
+            <a href="/Event">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
@@ -45,22 +44,22 @@ function Profil_User() {
                 <a href="/Profil_User">Profil</a>
               </li>
               <li>
-                <a href="">Event-ku</a>
+                <a href="/Event_ku">Event-ku</a>
               </li>
               <li>
-                <a href="">Tiket-ku</a>
+                <a href="/Tiket_ku">Tiket-ku</a>
               </li>
               <li>
                 <a href="/Notifikasi">Notifikasi</a>
               </li>
               <li>
-                <a href="">Favorit</a>
+                <a href="/Favorit">Favorit</a>
               </li>
               <li>
-                <a href="">Pengaturan</a>
+                <a href="/pengaturan">Pengaturan</a>
               </li>
               <li>
-                <a href="">Keluar Akun</a>
+                <a href="/Sign_in">Keluar Akun</a>
               </li>
             </ul>
             </div>

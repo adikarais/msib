@@ -10,16 +10,11 @@
 }
 
 /* Gambar besar */
-.event-image-container {
-  position: relative;
-  width: 100%;
-}
-
 .event-image {
-  width: 100%;
+  max-width: 100%; /* Mencegah gambar melampaui lebar kontainer */
   height: auto;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: cover; /* Atau gunakan contain sesuai kebutuhan */
 }
 
 /* Teks di dalam gambar */
@@ -27,7 +22,7 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background: rgba(0, 0, 0, 0.7); /* Latar belakang gelap transparan */
+  background: #fff; /* Latar belakang gelap transparan */
   color: #fff;
   padding: 10px 15px;
   border-radius: 5px;

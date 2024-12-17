@@ -30,7 +30,7 @@ function Sign_Up() {
                         <label for="password">Password</label>
                         <input type="password" id="password" placeholder="Masukkan password" required/>
                     </div>
-                    <button type="submit" className="main-btn">Daftar</button>
+                    <button type="submit" className="main-btn"><a href="/Verifikasi">Daftar</a></button>
                 </form>
                 
                 <div className="separator">
@@ -39,11 +39,12 @@ function Sign_Up() {
                 
                 <button className="google-btn">
                     <img src="/assets/img/google.png" alt="Google Icon" className="google-icon"/>
-                    Daftar dengan akun Google
+                    <a href="/Masuk_akun_google">Daftar dengan akun Google</a>
                 </button>
                 
+            
+            <p className="signup-text">Sudah punya akun? <a href="/Sign_in">Masuk</a></p>
             </div>
-
           
             <div className="image-container">
                 <img src="/assets/img/wp.jpg" alt="Concert" className="side-image"/>

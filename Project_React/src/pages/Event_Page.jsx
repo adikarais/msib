@@ -38,12 +38,10 @@ function Event_Page() {
           </div>
 
           <nav className="nav">
-            <a href="/">Beranda</a>
-            <a href="#">Event</a>
-            <a href="/Profile_Page_komunitas">PPK</a>
-            <a href="/Tiket">Tiket</a>
+          <a href="/Home">Beranda</a>
+            <a href="/Event">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
-            
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
           </nav>
@@ -80,7 +78,8 @@ function Event_Page() {
             <button className="btn btn-warning">Teater</button>
             <i class='bx bx-bookmark' style={{ textIndent: '33em',  fontSize: '31px' }}></i>
               <h1><br/>Fragmen </h1>
-              <p>Teater Koma</p>
+              <p><a href="/Profile_Page_komunitas">Teater Koma </a></p>
+  
 
               <i class='bx bx-calendar-week'> Senin, 28 Oktober 2024     <i class='bx bx-chair' style={{ textIndent: '13em' }}> 200 orang</i>  </i><br/>
               <i class='bx bx-time-five'> 18.00-20.00 &emsp;  <i class='bx bx-money' style={{ textIndent: '17em' }}></i> mulai dari Rp100.000</i><br/>
@@ -94,7 +93,7 @@ function Event_Page() {
               akan membentuk pola yang unik dalam kehidupan kita. Melalui kisah-kisah yang menyentuh, penonton diajak untuk merenungkan 
               makna kehidupan dan bagaimana setiap keputusan yang kita buat akan membentuk siapa kita saat ini dan di masa depan.
               </p>
-              <button className="btn btn-warning">Pesan Sekarang</button><br/>
+              <button className="btn btn-warning"><a href="/Detail_tiket"> Pesan Sekarang</a></button><br/>
             </div><br/><br/> 
 
 

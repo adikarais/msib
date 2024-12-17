@@ -12,7 +12,7 @@ function About_us() {
       <body>
         <header className="header">
           <div className="logo">
-            <img src="/assets/img/Logo (1).png" alt="Muselix Logo" className="logo-image" />
+            <img src="/assets/img/Logo (1).png" alt="Muselix Logo" className="logo-image"style={{ height: '24px' }}  />
             {/* <!-- Replace with your logo image file --> */}
           </div>
 
@@ -25,14 +25,9 @@ function About_us() {
           </div>
 
           <nav className="nav">
-            <a href="/" className="link">
-              Beranda
-            </a>
-            <a href="#" className="link">
-              Event
-            </a>
-            <a href="/Profile_Page_komunitas">PPK</a>
-            <a href="/Tiket">Tiket</a>
+          <a href="/Home">Beranda</a>
+            <a href="/Event_Page">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User" className="link">
               <img src="/assets/img/profile.png" alt="User Icon" style={{ width: '30px' }} />
             </a>

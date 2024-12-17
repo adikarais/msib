@@ -25,11 +25,10 @@ function Tiket() {
           </button>
         </div>
         <nav className="nav">
-          <a href="/">Beranda</a>
-          <a href="#">Event</a>
-          <a href="/Profile_Page_komunitas">PPK</a>
-          <a href="/Tiket">Tiket</a>
-          <a href="/Profil_User">
+        <a href="/Home">Beranda</a>
+            <a href="/Event_Page">Event</a>
+            <a href="/Tiket_page">Tiket</a>
+            <a href="/Profil_User">
             <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
           </a>
         </nav>
@@ -48,8 +47,6 @@ function Tiket() {
           <button className="btn-category">Konser</button>
           <button className="btn-category">Orkestra</button>
           <button className="btn-category">Teater</button>
-          <button className="btn-outline">Teater</button>
-          <button className="btn-outline">Teater</button>
         </section>
 
         <section className="event-section">
@@ -58,7 +55,7 @@ function Tiket() {
             {Array.from({ length: 12 }).map((_, idx) => (
               <div key={idx} className="event-card">
                 <img src="/assets/img/fc9fa5ede1a28bad5fad74359c09bfaa 2.png" alt="Event" />
-                <h3>Event {idx + 1}</h3>
+                <h3>Fragmen {idx + 1}</h3>
                 <p>Detail event goes here.</p>
                 <p>Rp 150.000</p>
                 <button className="btn-available">Tersedia</button>

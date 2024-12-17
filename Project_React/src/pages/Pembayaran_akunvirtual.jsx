@@ -29,10 +29,9 @@ function Pembayaran_akunvirtual() {
           </div>
 
           <nav className="nav">
-            <a href="/">Beranda</a>
-            <a href="#">Event</a>
-            <a href="/Profile_Page_komunitas">PPK</a>
-            <a href="/Tiket">Tiket</a>
+          <a href="/Home">Beranda</a>
+            <a href="/Event_Page">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
@@ -96,7 +95,7 @@ function Pembayaran_akunvirtual() {
         </div>
 
       <div className="parent-container">
-      <button className="btn-small-center">Selanjutnya</button>
+      <button className="btn-small-center"><a href="/transaksi_berhasil">Selanjutnya</a></button>
 </div>
         {/* Footer */}
         <footer className="footer">

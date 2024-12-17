@@ -31,10 +31,9 @@ function Privacy_Policy() {
           </div>
 
           <nav className="nav">
-            <a href="/">Beranda</a>
-            <a href="#">Event</a>
-            <a href="/Profile_Page_komunitas">PPK</a>
-            <a href="/Tiket">Tiket</a>
+          <a href="/Home">Beranda</a>
+            <a href="/Event_Page">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
