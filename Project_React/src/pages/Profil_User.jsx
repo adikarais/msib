@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/profil.css';
 
 function Profil_User() {
   return (
@@ -7,8 +8,6 @@ function Profil_User() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Musetix - Profile</title>
-        <link rel="stylesheet" href="src/assets/css/profil.css" />
-        <link rel="stylesheet" href="src/assets/css/Footer.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous" />
       </head>
       <body>
@@ -28,7 +27,11 @@ function Profil_User() {
           </div>
 
           <nav className="nav">
+<<<<<<< HEAD
           <a href="/Home">Beranda</a>
+=======
+            <a href="/">Beranda</a>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
             <a href="/Event">Event</a>
             <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
@@ -105,7 +108,7 @@ function Profil_User() {
             <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
             <a href="/Privacy_Policy">Kebijakan Privasi</a>
             <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-            <a href="/Pusat_bantuan">Pusat Bantuan</a>
+            <a href="/pusat_bantuan">Pusat Bantuan</a>
           </div>
         </footer>
       </body>

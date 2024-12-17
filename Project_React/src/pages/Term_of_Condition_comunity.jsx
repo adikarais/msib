@@ -27,8 +27,13 @@ function Term_of_Condition_comunity() {
           </div>
 
           <nav className="nav">
+<<<<<<< HEAD
           <a href="/Home">Beranda</a>
             <a href="/Event_Page">Event</a>
+=======
+            <a href="/">Beranda</a>
+            <a href="/Event">Event</a>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
             <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
@@ -118,7 +123,7 @@ function Term_of_Condition_comunity() {
             <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
             <a href="/Privacy_Policy">Kebijakan Privasi</a>
             <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-            <a href="/Pusat_bantuan">Pusat Bantuan</a>
+            <a href="/pusat_bantuan">Pusat Bantuan</a>
           </div>
         </footer>
       </body>

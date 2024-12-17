@@ -242,7 +242,11 @@ function Home() {
           </button>
         </div>
         <nav className="nav">
+<<<<<<< HEAD
           <a href="/Home">Beranda</a>
+=======
+          <a href="/">Beranda</a>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
           <a href="/Event">Event</a>
           <a href="/Tiket_page">Tiket</a>
           <a href="/Profil_User">
@@ -283,12 +287,24 @@ function Home() {
           <button className="btn-more"><a href="/Event">Lihat lainnya</a></button>
         </section>
 
+<<<<<<< HEAD
           <section className="cta">
           <h2>Buat Eventmu Sekarang!!</h2>
           <p>Manfaatkan fitur event-ku untuk menjangkau jutaan pengunjung.</p>
           <button className="btn-cta"><a href="/event_ku">Coba Sekarang</a></button>
           </section>
           </main>
+=======
+        <section className="cta">
+          <div></div>
+          <h2>Buat Eventmu Sekarang!!</h2>
+          <p>Manfaatkan fitur event-ku untuk menjangkau jutaan pengunjung.</p>
+          <a href="/Event_ku">
+          <button className="btn-cta">Coba Sekarang</button>
+          </a>
+        </section>
+      </main>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
 
       <footer className="footer">
         <div className="logo">
@@ -299,7 +315,7 @@ function Home() {
           <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
           <a href="/Privacy_Policy">Kebijakan Privasi</a>
           <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-          <a href="/Pusat_bantuan">Pusat Bantuan</a>
+          <a href="/pusat_bantuan">Pusat Bantuan</a>
         </div>
       </footer>
     </div>

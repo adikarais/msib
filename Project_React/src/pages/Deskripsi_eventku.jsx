@@ -23,10 +23,17 @@ function Deskripsi_eventku () {
               </div>
     
               <nav className="nav">
+<<<<<<< HEAD
               <a href="/Home">Beranda</a>
             <a href="/Event_Page">Event</a>
             <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
+=======
+                <a href="/">Beranda</a>
+                <a href="Event">Event</a>
+                <a href="/Tiket_page">Tiket</a>
+                <a href="/Profil_User">
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
                 <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
                 </a>
               </nav>
@@ -134,7 +141,7 @@ function Deskripsi_eventku () {
                 <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
                 <a href="/Privacy_Policy">Kebijakan Privasi</a>
                 <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-                <a href="/Pusat_bantuan">Pusat Bantuan</a>
+                <a href="/pusat_bantuan">Pusat Bantuan</a>
               </div>
               </div>
             </footer>

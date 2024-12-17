@@ -236,7 +236,11 @@ function Event() {
         </div>
         <nav className="nav">
           <a href="/">Beranda</a>
+<<<<<<< HEAD
           <a href="#">Event</a>
+=======
+          <a href="/Event">Event</a>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
           <a href="/Tiket_page">Tiket</a>
           <a href="/Profil_User">
             <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
@@ -281,6 +285,22 @@ function Event() {
           </div>
         </footer>
       </main>
+<<<<<<< HEAD
+=======
+
+      <footer className="footer">
+        <div className="logo">
+          <img src="./assets/img/Logo.png" alt="logo" style={{ height: '24px' }} />
+        </div>
+        <div className="footer-links">
+          <a href="/About_us">Tentang Kami</a>
+          <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
+          <a href="/Privacy_Policy">Kebijakan Privasi</a>
+          <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
+          <a href="/pusat_bantuan">Pusat Bantuan</a>
+        </div>
+      </footer>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
     </div>
   );
 }

@@ -26,7 +26,11 @@ function Notifikasi() {
           </div>
 
           <nav className="nav">
+<<<<<<< HEAD
           <a href="/Home">Beranda</a>
+=======
+            <a href="/">Beranda</a>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
             <a href="/Event">Event</a>
             <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
@@ -41,11 +45,19 @@ function Notifikasi() {
               <ul className="side">
                 <li>
                 <a href="/profil_User">Profil</a>
+<<<<<<< HEAD
                 </li>
                 <li>
                 <a href="Event_ku">Event-ku</a>
                 </li>
                 <li>
+=======
+              </li>
+              <li>
+                <a href="/Event_ku">Event-ku</a>
+              </li>
+              <li>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
                 <a href="">Tiket-ku</a>
                 </li>
                 <li>
@@ -65,7 +77,7 @@ function Notifikasi() {
           </aside>
 
           <section className="notification-section">
-            <h2>Notifikasi</h2>
+            <h2>Notikafikasi</h2>
             <p>ada pesan untuk kamu, jangan lupa di cek, ya!</p>
             <div className="notification-card">
               <h3>Pembayaranmu Berhasil, nih!</h3>
@@ -94,7 +106,7 @@ function Notifikasi() {
             <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
             <a href="/Privacy_Policy">Kebijakan Privasi</a>
             <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-            <a href="/Pusat_bantuan">Pusat Bantuan</a>
+            <a href="/pusat_bantuan">Pusat Bantuan</a>
           </div>
           </div>
         </footer>

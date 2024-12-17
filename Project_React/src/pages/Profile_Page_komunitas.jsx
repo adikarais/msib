@@ -30,7 +30,11 @@ function Profile_Page_komunitas() {
             </button>
           </div>
           <nav className="nav">
+<<<<<<< HEAD
           <a href="/Home">Beranda</a>
+=======
+            <a href="/">Beranda</a>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
             <a href="/Event">Event</a>
             <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
@@ -162,6 +166,23 @@ function Profile_Page_komunitas() {
             </div>
           </footer>
         </section>
+<<<<<<< HEAD
+=======
+
+        {/* Footer */}
+        <footer className="footer">
+          <div className="logo">
+            <img src="./assets/img/Logo.png" alt="logo" style={{ height: '24px' }} />
+          </div>
+          <div className="footer-links">
+            <a href="/About_us">Tentang Kami</a>
+            <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
+            <a href="/Privacy_Policy">Kebijakan Privasi</a>
+            <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
+            <a href="/pusat_bantuan">Pusat Bantuan</a>
+          </div>
+        </footer>
+>>>>>>> ca57c949ac55dabc94c424550eed4c831495d734
       </body>
     </div>
   );
