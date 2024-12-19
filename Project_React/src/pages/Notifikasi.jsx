@@ -26,42 +26,43 @@ function Notifikasi() {
           </div>
 
           <nav className="nav">
-            <a href="#">Beranda</a>
-            <a href="#">Event</a>
-            <a href="/Tiket">Tiket</a>
+          <a href="/Home">Beranda</a>
+            <a href="/Event">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
-            <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
+              <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
           </nav>
-          </section>
+        </section>
 
         <main>
-        <aside> <div className='name-links'>
-            <ul className="side">
-              <li>
+          <aside>
+            <div className='name-links'>
+              <ul className="side">
+                <li>
                 <a href="/profil_User">Profil</a>
-              </li>
-              <li>
-                <a href="">Event-ku</a>
-              </li>
-              <li>
+                </li>
+                <li>
+                <a href="Event_ku">Event-ku</a>
+                </li>
+                <li>
                 <a href="">Tiket-ku</a>
-              </li>
-              <li className="active">
+                </li>
+                <li>
+                <li className="active">
                 <a href="/Notifikasi">Notifikasi</a>
-              </li>
-              <li>
+                </li>
                 <a href="/Favorit">Favorit</a>
-              </li>
-              <li>
-                <a href="">Pengaturan</a>
-              </li>
-              <li>
-                <a href="">Keluar Akun</a>
-              </li>
-            </ul>
+                </li>
+                <li>
+                <a href="Pengaturan">Pengaturan</a>
+                </li>
+                <li>
+                <a href="Sign_in">Keluar Akun</a>
+                </li>
+              </ul>
             </div>
-        </aside>
+          </aside>
 
           <section className="notification-section">
             <h2>Notifikasi</h2>

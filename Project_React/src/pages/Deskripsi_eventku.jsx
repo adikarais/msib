@@ -1,6 +1,7 @@
 import React from "react";
 import '../assets/css/Deskripsi_eventku.css';
 
+
 function Deskripsi_eventku () {
   return (
         <>
@@ -22,10 +23,10 @@ function Deskripsi_eventku () {
               </div>
     
               <nav className="nav">
-                <a href="#">Beranda</a>
-                <a href="#">Event</a>
-                <a href="/Tiket">Tiket</a>
-                <a href="/Profil_User">
+              <a href="/Home">Beranda</a>
+            <a href="/Event_Page">Event</a>
+            <a href="/Tiket_page">Tiket</a>
+            <a href="/Profil_User">
                 <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
                 </a>
               </nav>
@@ -35,15 +36,15 @@ function Deskripsi_eventku () {
       <ul className="timeline">
         <li className="timeline-item active">
           <div className="circle"></div>
-          <span>Pembayaran Tiket</span>
+          <span>Deskripsi</span>
         </li>
         <li className="timeline-item">
           <div className="circle"></div>
-          <span>Masukkan Data Diri</span>
+          <span>Tiket</span>
         </li>
         <li className="timeline-item">
           <div className="circle"></div>
-          <span>Pilih Pembayaran</span>
+          <span>Selesai</span>
         </li>
       </ul>
 

@@ -40,7 +40,7 @@ body {
     align-items: center;
     gap: 0;
     width: 100%; /* Buat lebih fleksibel */
-    max-width: 350px; /* Panjang maksimum */
+    max-width: 200px; /* Panjang maksimum */
 }
 
 .search-container input {

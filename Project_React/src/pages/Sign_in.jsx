@@ -26,7 +26,7 @@ function Sign_in() {
                         <label for="password">Password</label>
                         <input type="password" id="password" placeholder="Masukkan password" required/>
                     </div>
-                    <button type="submit" className="main-btn">Masuk</button>
+                    <button type="submit" className="main-btn"><a href="/Verifikasi">Masuk</a></button>
                 </form>
                 
                 <div className="separator">

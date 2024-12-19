@@ -31,10 +31,11 @@ function pusat_bantuan() {
           </div>
 
           <nav className="nav">
-            <a href="#">Beranda</a>
-            <a href="#">Event</a>
-            <a href="#">Tiket</a>
-            <a href="#">
+          <a href="/Home">Beranda</a>
+            <a href="/Event_Page">Event</a>
+           
+            <a href="/Tiket_page">Tiket</a>
+            <a href="/Profil_User">
               <img src="public/assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
           </nav>
@@ -119,11 +120,11 @@ function pusat_bantuan() {
 
         {/* <!-- Tautan di bagian kanan --> */}
         <div className="footer-links">
-          <a href="#">Tentang Kami</a>
-          <a href="#">Syarat dan Ketentuan</a>
-          <a href="#">Kebijakan Privasi</a>
-          <a href="#">Peraturan Komunitas</a>
-          <a href="#">Pusat Bantuan</a>
+          <a href="/About_us">Tentang Kami</a>
+          <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
+          <a href="/Privacy_Policy">Kebijakan Privasi</a>
+          <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
+          <a href="/Pusat_bantuan">Pusat Bantuan</a>
         </div>
       </footer>
     </div>

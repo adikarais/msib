@@ -239,3 +239,9 @@ text-decoration: none;
 .footer-links a:hover {
 text-decoration: underline;
 }
+
+.ticket-selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -31,10 +31,9 @@ function Verifikasi_pembayaran() {
           </div>
 
           <nav className="nav">
-            <a href="/">Beranda</a>
-            <a href="#">Event</a>
-            <a href="/Profile_Page_komunitas">PPK</a>
-            <a href="/Tiket">Tiket</a>
+          <a href="/Home">Beranda</a>
+            <a href="/Event_Page">Event</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
@@ -52,9 +51,13 @@ function Verifikasi_pembayaran() {
             <div className="progress-line-filled"></div>
         </div>
         <div className="d-flex justify-content-between">
+            <div className="progress-circle active"></div>
             <span className="progress-step-label">Pembayaran Tiket</span>
+            <div className="progress-circle active"></div>
             <span className="progress-step-label">Masukkan Data Diri</span>
+            <div className="progress-circle active"></div>
             <span className="progress-step-label">Pilih Pembayaran</span>
+            <div className="progress-circle active"></div>
             <span className="progress-step-label">Verifikasi Kode</span>
             <span className="progress-step-label">Konfirmasi Pembayaran</span>
             <span className="progress-step-label">Pembayaran Selesai</span>
@@ -79,7 +82,7 @@ function Verifikasi_pembayaran() {
             <p className="verification-text">Tidak dapat kode verifikasi? <span className="resend-link" onclick="resendCode()">coba kirim ulang</span> <span className="resend-timer" id="timer">60</span></p>
         </div>
         
-        <button className="next-button">Selanjutnya</button>
+        <button className="next-button"><a href="/pilih_metode_pembayaran">Selanjutnya</a></button>
     </div>
     {/* Footer */}
     <footer className="footer">
